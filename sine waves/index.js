@@ -25,6 +25,13 @@ class Sinwave {
 const ampInput = document.getElementById('amp');
 const wavelengthInput = document.getElementById('wavelength');
 const frequencyInput = document.getElementById('frequency');
+
+const background_r = document.getElementById('background_r');
+const background_g = document.getElementById('background_g');
+const background_b = document.getElementById('background_b');
+const background_a = document.getElementById('background_a');
+
+
 const canvas = document.getElementById('canvas');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
@@ -55,6 +62,23 @@ wavelengthInput.addEventListener('change', (e)=>{
 
 frequencyInput.addEventListener('change', (e)=>{
     incrementInput = parseFloat(e.target.value);
-})
+});
+
+//
+background_r.addEventListener('change', (e)=>{
+    sinwave.r = e.target.value;
+});
+
+background_g.addEventListener('change', (e)=>{
+    sinwave.g = e.target.value;
+});
+
+background_b.addEventListener('change', (e)=>{
+    sinwave.b = e.target.value;
+});
+
+background_a.addEventListener('change', (e)=>{
+    incrementInput = parseFloat(e.target.value);
+});
 
 animate();
