@@ -6,6 +6,10 @@ body{
     margin: 0;
 }
 
+.wave_btn, .bg_btn, .wave_color_btn{
+    cursor: pointer;
+}
+
 .controls {
     position: absolute;
     color: white;
@@ -25,4 +29,12 @@ body{
 
 .control-input input {
     width: 160px;
+}
+
+.wave_controls, .bg_controls, .wave_color_controls{
+    display: none;
+}
+
+.active {
+    display: block;
 }
