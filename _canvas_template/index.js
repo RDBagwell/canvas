@@ -8,11 +8,11 @@ class Particle {
   }
 
   draw() {
-    c.beginPath()
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.fillStyle = this.color
-    c.fill()
-    c.closePath()
+    ctx.beginPath()
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
+    ctx.fillStyle = this.color
+    ctx.fill()
+    ctx.closePath()
   }
 
   update() {
